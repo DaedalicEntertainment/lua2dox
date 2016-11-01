@@ -538,7 +538,7 @@ local This_app = TApp()
 --main
 local cl = TCore_Commandline()
 
-local argv1 = cl:getRaw(2)
+local argv1 = cl:getRaw(1)
 if argv1 == '--help' then
 	TCore_IO_writeln(This_app:getVersion())
 	TCore_IO_writeln(This_app:getCopyright())
