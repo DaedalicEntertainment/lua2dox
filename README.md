@@ -11,9 +11,9 @@ In order to use Doxygen for parsing Lua files, perform the following installatio
 1. Get the latest version of lua2dox.lua from the our GitHub page.
 1. In your Doxygen file, set
 
-
-    EXTENSION_MAPPING = lua=C
-    FILTER_PATTERNS = *.lua=PATH\TO\lua2dox\lua2dox.lua
-
+```
+EXTENSION_MAPPING = lua=C
+FILTER_PATTERNS = *.lua=PATH\TO\lua2dox\lua2dox.lua
+```
 
 Now, running `doxygen` in a folder with Doxyfile will take every Lua input file, send it through lua2dox.lua, which in turn will convert the file to C-style syntax, which in turn is understood by Doxygen. 
